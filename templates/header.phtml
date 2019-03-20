@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Ralph Waldo Emerson</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="/css/custom.css" rel="stylesheet">
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="/">Ralph Waldo Emerson</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item<?php if ($_SERVER['REQUEST_URI'] == "/") echo " active"; ?>">
+                <a class="nav-link" href="/">About<?php if ($_SERVER['REQUEST_URI'] == "/") echo ' <span class="sr-only">(current)</span>'; ?></a>
+            </li>
+            <li class="nav-item<?php if ($_SERVER['REQUEST_URI'] == "/contact") echo " active"; ?>">
+                <a class="nav-link" href="/contact">Contact<?php if ($_SERVER['REQUEST_URI'] == "/contact") echo ' <span class="sr-only">(current)</span>'; ?></a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div class="emerson">
+    <img src="/images/emerson.jpg" alt="Picture of Ralph Waldo Emerson">
+</div>
+<div class="container">
